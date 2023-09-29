@@ -1,0 +1,5 @@
+{
+    "svelte.plugin.svelte.compilerWarnings": {
+        "missing-custom-element-compile-options": "ignore"
+    }
+}

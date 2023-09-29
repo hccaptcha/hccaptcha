@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>HCCAPTCHA</title>
+        <script src="build/captcha.js"></script>
+    </head>
+
+    <body>
+        <div style="max-width: 350px; padding-top: 200px">
+            <hcc-captcha id="captcha" server="captcha.qdzx.icu" />
+        </div>
+        <button onclick="captchaObj.reset()">Reset</button>
+        <button onclick="captchaObj.refresh()">Refresh</button>
+        <div id="code"></div>
+        <script>
+            const captchaObj = document.getElementById("captcha");
+            captchaObj.onSuccess = res => {
+                document.getElementById("code").innerText = res;
+                console.log(captchaObj);
+            };
+            /**
+             * 刷新 captchaObj.refresh()
+             * 获取code，未验证成功返回undefined captchaObj.getCode()
+             * server参数：指定验证服务器，默认captcha.qdzx.icu
+             */
+        </script>
+    </body>
+</html>
