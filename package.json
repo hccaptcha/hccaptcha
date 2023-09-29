@@ -7,6 +7,15 @@
     "dev": "rollup -c rollup.dev.js -w",
     "start": "sirv public --no-clear"
   },
+  "author": "yxzlwz <danny070601@aliyun.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hccaptcha/hccaptcha"
+  },
+  "bugs": {
+    "url": "https://github.com/hccaptcha/hccaptcha/issues"
+  },
+  "license":"GPL-3.0",
   "main": "./dist/captcha.js",
   "module": "./dist/captcha.mjs",
   "devDependencies": {
