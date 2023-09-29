@@ -1,6 +1,6 @@
 {
   "name": "hccaptcha",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "build": "rollup -c rollup.prod.js",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/hccaptcha/hccaptcha/issues"
   },
-  "license":"GPL-3.0",
+  "license": "GPL-3.0",
   "main": "./dist/captcha.js",
   "module": "./dist/captcha.mjs",
   "devDependencies": {
